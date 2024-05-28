@@ -184,14 +184,15 @@ class ExampleGridContainer extends React.Component {
                 uniqueMC.push(data.Z_OPEN_70);
                 this.state.sortOptionsMC.push({'value':data.Z_OPEN_70,'text':data.Z_OPEN_70 +' - ' +data.Z_OPEN_71});
             }
-            if (uniqueClass.indexOf(data.class) === -1) {
-                uniqueClass.push(data.class);
+            if (uniqueClass.indexOf(data.CLASS_NBR) === -1) {
+                uniqueClass.push(data.CLASS_NBR);
                 this.state.sortOptionsClass.push({'value':data.CLASS_NBR,'text':data.CLASS_NBR+' - '+data.CLASS_NAME});
             }
-            if (uniquePID.indexOf(data.pid) === -1) {
-                uniquePID.push(data.pid);
+            if (uniquePID.indexOf(data.STYLE_MASTER_SKU) === -1) {
+                uniquePID.push(data.STYLE_MASTER_SKU);
                 this.state.sortOptionsPID.push({'value':data.STYLE_MASTER_SKU,'text':data.STYLE_MASTER_SKU +' : '+ data.PRODUCT_NAME});
             }
+            
         });
 
         if(this.state.status === 'Both'){

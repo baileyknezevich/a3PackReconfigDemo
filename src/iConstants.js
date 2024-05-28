@@ -101,5 +101,3 @@ const getData = (dept) =>{
 
 export {getDepartments, getData, submitData};
 
-
-/*//packConfigurationApi/health*/ 
