@@ -1,0 +1,6 @@
+<svg id="Icon_Offers_Fill" data-name="Icon Offers Fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M18,0H13V1A3,3,0,0,1,7,1V0H2A2,2,0,0,0,0,2V18a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V2A2,2,0,0,0,18,0ZM12.47,15,10,13.1,7.54,15l.94-3L6,10.05H9.06L10,7l1,3.05h3l-2.47,1.89Z" transform="translate(2 2)"/>
+</svg>

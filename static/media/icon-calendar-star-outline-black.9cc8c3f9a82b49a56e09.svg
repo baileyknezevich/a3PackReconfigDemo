@@ -1,0 +1,6 @@
+<svg id="Icon_Calendar_Star_Outline" data-name="Icon Calendar Star Outline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M-6028,22a2,2,0,0,1-2-2V3a2,2,0,0,1,2-2h2V0h2V1h10V0h2V1h2a2,2,0,0,1,2,2V20a2,2,0,0,1-2,2Zm-1-2a1,1,0,0,0,1,1h18a1,1,0,0,0,1-1V5h-20Zm0-17V4h20V3a1,1,0,0,0-1-1h-2V3h-2V2h-10V3h-2V2h-2A1,1,0,0,0-6029,3Zm10,11.634-3.078,2.355,1.177-3.811-3.1-2.367h3.833L-6018.989,7l1.167,3.811H-6014l-3.089,2.355,1.177,3.835Z" transform="translate(6031 1)"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg id="Icon_Bag_Filled_Outline_Large" data-name="Icon Bag Filled Outline Large" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M20.75,8h-18V25.25h18Zm-4.5-.75a4.5,4.5,0,0,0-9,0Zm-9.75,0a5.25,5.25,0,0,1,10.5,0h3.75A.75.75,0,0,1,21.5,8V25.25a.75.75,0,0,1-.75.75h-18A.75.75,0,0,1,2,25.25V8a.75.75,0,0,1,.75-.75Z" transform="translate(0 -2)"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg id="Icon_Front" data-name="Icon Front" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M9.455,0A.478.478,0,0,0,9.1.16L.133,9.636a.5.5,0,0,0,0,.678L9.1,19.79a.5.5,0,1,0,.717-.678L1.179,9.975,9.813.838A.5.5,0,0,0,9.455,0Z" transform="translate(17 22) rotate(180)"/>
+</svg>

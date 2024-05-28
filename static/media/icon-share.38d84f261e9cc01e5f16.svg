@@ -1,0 +1,6 @@
+<svg id="Icon_Share" data-name="Icon Share" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M.5,22a.5.5,0,0,1-.5-.5V8.5A.5.5,0,0,1,.5,8h4a.5.5,0,0,1,0,1H1V21H15V9H11.5a.5.5,0,0,1,0-1h4a.5.5,0,0,1,.5.5v13a.5.5,0,0,1-.5.5Zm7-9.5V1.793L5,4.268a.543.543,0,0,1-.866-.159.5.5,0,0,1,.106-.54L7.66.148a.5.5,0,0,1,.709,0l3.39,3.39a.5.5,0,0,1,0,.71.509.509,0,0,1-.71,0L8.5,1.7V12.5a.5.5,0,0,1-1,0Z" transform="translate(4 1)"/>
+</svg>

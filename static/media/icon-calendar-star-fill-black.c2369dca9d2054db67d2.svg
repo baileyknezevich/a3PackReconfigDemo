@@ -1,0 +1,6 @@
+<svg id="Icon_Calendar_Star_Fill" data-name="Icon Calendar Star Fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M20,1H18V0H16V1H6V0H4V1H2A2,2,0,0,0,0,3V20a2,2,0,0,0,2,2H20a2,2,0,0,0,2-2V3A2,2,0,0,0,20,1ZM14.087,17,11,14.625,7.925,17,9.1,13.25,6,10.813H9.825L11,7l1.25,3.813H16l-3.087,2.363ZM21,4H1V3A1,1,0,0,1,2,2H4V3H6V2H16V3h2V2h2a1,1,0,0,1,1,1Z" transform="translate(1 1)"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg id="Icon_Gift_Card_Outline" data-name="Icon Gift Card Outline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M-6028,18a2,2,0,0,1-2-2V2a2,2,0,0,1,2-2h18a2,2,0,0,1,2,2V16a2,2,0,0,1-2,2Zm-1-16V16a1,1,0,0,0,1,1h18a1,1,0,0,0,1-1V2a1,1,0,0,0-1-1h-18A1,1,0,0,0-6029,2Zm10,9.632-3.078,2.356,1.177-3.812-3.1-2.365h3.833L-6018.989,4l1.167,3.812H-6014l-3.089,2.355,1.177,3.833Z" transform="translate(6031 3)"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg id="Icon_Star_Reward_Red" data-name="Icon Star Reward Red" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <g id="Icon" transform="translate(1 1.48)">
+    <path id="Path" d="M11.01.52,8.43,8.51H0l6.83,4.96L4.24,21.45,11,16.51l6.8,4.97-2.6-8.02L22,8.51H13.6Z" fill="#e01a2b"/>
+    <path id="Path-2" data-name="Path" d="M6.83,13.47l8.37-.01L0,8.51Z" fill="#ab0000"/>
+    <path id="Path-3" data-name="Path" d="M6.83,13.47,4.24,21.45,22,8.51Z" fill="#c11221"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+  <g id="Icon_Back_Small" data-name="Icon Back Small" transform="translate(-1 -14)">
+    <g id="Canvas" transform="translate(0 14)">
+      <path id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" d="M1,0H22V22H1Z" fill="rgba(0,0,0,0)"/>
+    </g>
+    <path id="Icon" d="M8.23,18a.732.732,0,0,1-.554-.241L.193,9.485a.785.785,0,0,1,0-1.023L7.676.222A.748.748,0,1,1,8.739,1.275l-6.974,7.7,7.019,7.774a.739.739,0,0,1,0,1.053A.687.687,0,0,1,8.23,18Z" transform="translate(6.996 16)"/>
+  </g>
+</svg>

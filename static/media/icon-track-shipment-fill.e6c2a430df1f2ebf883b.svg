@@ -1,0 +1,6 @@
+<svg id="Icon_Track_Shipment_Fill" data-name="Icon Track Shipment Fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M-6045-1134h-18a1,1,0,0,1-1-1v-12.764a.978.978,0,0,1,.107-.447l3.617-7.237a.992.992,0,0,1,.894-.552h10.764a.992.992,0,0,1,.895.552l3.619,7.237a1.012,1.012,0,0,1,.1.447V-1135A1,1,0,0,1-6045-1134Zm-9-7v4h7v-4h-7Zm-8.5-8h0l-.5,1h18l-.5-1h-8v-6h-1v6Zm14.5,11h-5v-2h5v2Z" transform="translate(6066 1157)"/>
+</svg>

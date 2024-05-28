@@ -1,0 +1,6 @@
+<svg id="Icon_Question_Fill" data-name="Icon Question Fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M11,0A11,11,0,1,1,0,11,11,11,0,0,1,11,0Zm2.83,10.381a3.442,3.442,0,1,0-6.29-1.93.6.6,0,0,0,1.2,0,2.241,2.241,0,1,1,4.13,1.2,2.17,2.17,0,0,1-1.53,1,1,1,0,0,0-.93,1.06v2.141a.6.6,0,1,0,1.2,0V12.121a.38.38,0,0,1,.27-.37A3.47,3.47,0,0,0,13.83,10.381ZM10.967,17.77a.991.991,0,0,0,.717-.274A1.024,1.024,0,0,0,12,16.787a1,1,0,1,0-1.033.983Z" transform="translate(1 1)"/>
+</svg>

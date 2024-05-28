@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.091" height="13.368" viewBox="0 0 15.091 13.368">
+  <g id="Group_1705" data-name="Group 1705" transform="translate(-842.454 -913.316)">
+    <g id="Group_1703" data-name="Group 1703" transform="translate(364 630.49)">
+      <g id="Group_950" data-name="Group 950" transform="translate(484 287)">
+        <path id="Icon_awesome-eye" data-name="Icon awesome-eye" d="M8,10.5a2,2,0,1,1,2-2A2,2,0,0,1,8,10.5Z" transform="translate(-6 -6.5)" fill="none" stroke="#000" stroke-width="1"/>
+      </g>
+      <g id="visibility" transform="translate(479 284.51)">
+        <path id="Path_2037" data-name="Path 2037" d="M7,89.25a7.5,7.5,0,0,0-7,4.5,7.5,7.5,0,0,0,7,4.5,7.5,7.5,0,0,0,7-4.5,7.5,7.5,0,0,0-7-4.5Z" transform="translate(0 -89.25)" fill="none" stroke="#000" stroke-width="1"/>
+      </g>
+    </g>
+    <g id="Group_1704" data-name="Group 1704" transform="translate(0.5 0.5)">
+      <line id="Line_39" data-name="Line 39" x1="7" y2="12" transform="translate(845.5 913.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      <line id="Line_38" data-name="Line 38" x1="7" y2="12" transform="translate(846.5 913.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

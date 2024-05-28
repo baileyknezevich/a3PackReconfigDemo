@@ -1,0 +1,8 @@
+<svg data-name="Icon Clock Outline" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+  <mask id="a">
+    <circle cx="11" cy="11" r="11"/>
+    <path d="M11 1A10 10 0 1 1 1 11 10 10 0 0 1 11 1zm0-1a11 11 0 1 0 7.778 3.222A11 11 0 0 0 11 0z" fill="#fff"/>
+    <path d="M11 12H4.5a.5.5 0 0 1 0-1h6V3.5a.5.5 0 0 1 1 0v8a.5.5 0 0 1-.5.5z" fill="#fff"/>
+  </mask>
+  <path mask="url(#a)" d="M0 0h24v24H0z"/>
+</svg>

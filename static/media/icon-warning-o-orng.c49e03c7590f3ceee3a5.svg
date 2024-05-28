@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-warning-o-orng</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 20 0 20 17.9997 0 17.9997"></polygon>
+    </defs>
+    <g id="icon-warning-o-orng" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-8" transform="translate(2.000000, 3.000000)">
+            <path d="M9.1093,15.1091 C9.1093,14.6011 9.5003,14.2181 10.0003,14.2181 C10.5073,14.2181 10.8903,14.6011 10.8903,15.1091 C10.8903,15.6091 10.5073,16.0001 10.0003,16.0001 C9.5003,16.0001 9.1093,15.6091 9.1093,15.1091" id="Fill-1" fill="#E67700"></path>
+            <path d="M9.9999,12.5915 C9.6319,12.5915 9.3329,12.2925 9.3329,11.9245 L9.3329,5.6665 C9.3329,5.2985 9.6319,4.9995 9.9999,4.9995 C10.3679,4.9995 10.6669,5.2985 10.6669,5.6665 L10.6669,11.9245 C10.6669,12.2925 10.3679,12.5915 9.9999,12.5915" id="Fill-3" fill="#E67700"></path>
+            <g id="Group-7">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-6"></g>
+                <path d="M9.9999,-0.0003 C9.6669,-0.0003 9.3339,0.1557 9.1499,0.4687 L0.1209,16.6607 C-0.2341,17.2637 0.2329,17.9997 0.9719,17.9997 L19.0279,17.9997 C19.7669,17.9997 20.2339,17.2637 19.8789,16.6607 L10.8499,0.4687 C10.6659,0.1557 10.3329,-0.0003 9.9999,-0.0003 M9.9999,0.9997 L10.0019,1.0007 L18.9229,16.9997 L1.0779,16.9987 L9.9979,0.9997 L9.9999,0.9997" id="Fill-5" fill="#E67700" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

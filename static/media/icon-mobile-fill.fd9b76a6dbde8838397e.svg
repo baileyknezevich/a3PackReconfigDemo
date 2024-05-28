@@ -1,0 +1,6 @@
+<svg id="Icon_Mobile_Fill" data-name="Icon Mobile Fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M10,0a2,2,0,0,1,2,2V20a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0ZM8.469,14l-.937-3.063L10,9.051H6.949L6,6,5.063,9.051H2l2.48,1.886-.937,3.051L6,12.1Z" transform="translate(6 1)"/>
+</svg>

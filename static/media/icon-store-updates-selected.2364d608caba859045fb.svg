@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Group_1678" data-name="Group 1678" transform="translate(-1503 -311)">
+    <g id="Icon_Account_Outline" data-name="Icon Account Outline" transform="translate(1503 311)">
+      <g id="Canvas">
+        <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="20" height="20" fill="rgba(0,0,0,0)"/>
+      </g>
+    </g>
+    <path id="Icon" d="M10.5,18V0h8.591A.9.9,0,0,1,20,.9V17.1a.9.9,0,0,1-.909.9Zm2.228-8.1h.909V7.2h-.909ZM.91,18A.9.9,0,0,1,0,17.1V.9A.905.905,0,0,1,.91,0H9.5V18ZM6.364,9.9h.908V7.2H6.364Z" transform="translate(1503 312)" fill="#e01a2b"/>
+  </g>
+</svg>

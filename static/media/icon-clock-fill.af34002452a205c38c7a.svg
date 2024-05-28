@@ -1,0 +1,6 @@
+<svg id="Icon_Clock_Fill" data-name="Icon Clock Fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M11,0a11,11,0,1,0,7.778,3.222A11,11,0,0,0,11,0Zm.5,11.5a.5.5,0,0,1-.5.5H4.5a.5.5,0,0,1,0-1h6V3.5a.5.5,0,0,1,1,0Z" transform="translate(1 1)"/>
+</svg>

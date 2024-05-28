@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.604" height="10">
+  <defs>
+    <mask id="a">
+      <g data-name="Path 2177">
+        <path data-name="Path 29" d="M11.2 9.5H1.4a.87.87 0 0 1-.9-.833V1.333A.87.87 0 0 1 1.4.5h9.8a.87.87 0 0 1 .9.833v7.334a.87.87 0 0 1-.9.833z"/>
+        <path data-name="Path 30" d="M1.4 1a.377.377 0 0 0-.4.333v7.334A.377.377 0 0 0 1.4 9h9.8a.377.377 0 0 0 .4-.333V1.333A.377.377 0 0 0 11.2 1H1.4m0-1h9.8a1.368 1.368 0 0 1 1.4 1.333v7.334A1.368 1.368 0 0 1 11.2 10H1.4A1.368 1.368 0 0 1 0 8.667V1.333A1.368 1.368 0 0 1 1.4 0z" fill="#fff"/>
+      </g>
+      <g data-name="Group 14" fill="#fff">
+        <path data-name="Rectangle 25" d="M5 3h1v4H5z"/>
+        <path data-name="Rectangle 26" d="M7 3h1v4H7z"/>
+      </g>
+    </mask>
+  </defs>
+  <path mask="url(#a)" d="M0 0h12.604v10H0z"/>
+</svg>

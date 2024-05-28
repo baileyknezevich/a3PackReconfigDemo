@@ -1,0 +1,6 @@
+<svg id="Icon_Inbox_Outline" data-name="Icon Inbox Outline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M18,1a1,1,0,0,1,1,1V14a1,1,0,0,1-1,1H7.64S4.15,17.89,4,18V15H2a1,1,0,0,1-1-1V2A1,1,0,0,1,2,1Zm0-1H2A2,2,0,0,0,0,2V14a2,2,0,0,0,2,2H3v2a.992.992,0,0,0,1.59.8C4.74,18.7,8,16,8,16H18a2,2,0,0,0,2-2V2A2,2,0,0,0,18,0Z" transform="translate(2 3)"/>
+</svg>

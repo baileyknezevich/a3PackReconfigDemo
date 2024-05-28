@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="34.58">
+  <defs>
+    <mask id="a">
+      <g data-name="RFID icon- LOCK" transform="translate(-24.238 -99.916)">
+        <path data-name="Path 4321" d="M0 1h42v34.58H0z" transform="translate(24.238 98.916)" fill="#fff"/>
+        <path data-name="Path 4362" d="M811.1 352.242a9.92 9.92 0 0 1-1.759-1.411 9.591 9.591 0 1 1 11.837 1.465" transform="translate(-771.34 -226)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10"/>
+        <path data-name="Path 4363" d="M809.435 345.718a6.272 6.272 0 0 1-1.113-.892 6.065 6.065 0 1 1 7.485.926" transform="translate(-767.703 -222.336)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10"/>
+        <circle data-name="Ellipse 152" cx="1.774" cy="1.774" r="1.774" transform="translate(43.18 116.266)"/>
+        <path data-name="Line 69" transform="translate(44.967 119.433)" fill="none" stroke="#000" stroke-linecap="round" d="M0 0v6.064"/>
+      </g>
+    </mask>
+  </defs>
+  <path mask="url(#a)" d="M0 0h42v34.58H0z"/>
+</svg>

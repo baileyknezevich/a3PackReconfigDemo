@@ -1,0 +1,6 @@
+<svg id="Icon_Validation_Fill" data-name="Icon Validation Fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0ZM8.156,14.31a.434.434,0,0,0,.314-.129l7.393-7.393a.461.461,0,0,0-.647-.656l-7.06,7.06L4.784,9.819a.461.461,0,0,0-.647.656l3.7,3.7A.434.434,0,0,0,8.156,14.31Z" transform="translate(2 2)"/>
+</svg>

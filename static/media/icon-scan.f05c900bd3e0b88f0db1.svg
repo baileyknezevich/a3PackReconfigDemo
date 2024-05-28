@@ -1,0 +1,6 @@
+<svg id="Icon_Scan" data-name="Icon Scan" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M.5,20.1a.5.5,0,0,1-.5-.5v-6a.5.5,0,1,1,1,0v5.5H6.5a.5.5,0,0,1,.5.5.511.511,0,0,1-.5.5Zm15-.011a.5.5,0,1,1,0-1H21V13.6a.5.5,0,0,1,.5-.5.513.513,0,0,1,.5.49v6a.51.51,0,0,1-.5.5ZM16,15V5h2V15Zm-6,0V5h2V15ZM7,15V5H8V15ZM4,15V5H6V15Zm9-.03V5H14.11v9.97ZM21,6.5V1H15.5a.5.5,0,0,1,0-1h6a.5.5,0,0,1,.5.5v6a.513.513,0,0,1-.5.5A.5.5,0,0,1,21,6.5ZM0,6.5V.5A.5.5,0,0,1,.5,0h6a.5.5,0,1,1,0,1H1v5.49a.493.493,0,0,1-.144.359A.5.5,0,0,1,0,6.5Z" transform="translate(1 2)"/>
+</svg>

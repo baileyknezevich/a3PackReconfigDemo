@@ -1,0 +1,6 @@
+<svg id="Icon_Close_Small" data-name="Icon Close Small" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M4.705,4,6.853,1.85a.5.5,0,0,0-.709-.71L4,3.29,1.849,1.14a.5.5,0,0,0-.709.71L3.287,4,1.15,6.15A.5.5,0,0,0,1.5,7a.519.519,0,0,0,.35-.14L4,4.71,6.143,6.85a.469.469,0,0,0,.35.15.5.5,0,0,0,.35-.85Z" transform="translate(8.004 8.004)"/>
+</svg>

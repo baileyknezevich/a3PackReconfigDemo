@@ -1,0 +1,6 @@
+<svg id="Icon_Delivery_Outline" data-name="Icon Delivery Outline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M22,17H20.95a2.5,2.5,0,0,0-4.9,0H15V9h2.171a1,1,0,0,1,.708.293l3.828,3.828a1,1,0,0,1,.293.707Zm-3.5,2A1.5,1.5,0,1,1,20,17.5,1.5,1.5,0,0,1,18.5,19ZM14,17H7.95a2.5,2.5,0,0,0-4.9,0H2V6H14ZM5.5,19A1.5,1.5,0,1,1,7,17.5,1.5,1.5,0,0,1,5.5,19ZM23,13.828a2,2,0,0,0-.586-1.414L18.586,8.586A2,2,0,0,0,17.171,8H15V6a1,1,0,0,0-1-1H2A1,1,0,0,0,1,6V18H3.05a2.5,2.5,0,0,0,4.9,0h8.1a2.5,2.5,0,0,0,4.9,0H23Z" transform="translate(0)" fill-rule="evenodd"/>
+</svg>

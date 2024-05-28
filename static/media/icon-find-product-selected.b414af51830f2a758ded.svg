@@ -1,0 +1,13 @@
+<svg id="find_product_sel_ico" xmlns="http://www.w3.org/2000/svg" width="20" height="20.002" viewBox="0 0 20 20.002">
+  <g id="find_product_ico">
+    <path id="Path_2020" data-name="Path 2020" d="M12.5,25a.5.5,0,0,1-.5-.5V12a.5.5,0,0,1,1,0V24.5A.5.5,0,0,1,12.5,25Z" transform="translate(-12 -11.5)" fill="#e01a2b"/>
+    <path id="Path_2021" data-name="Path 2021" d="M50.5,25a.5.5,0,0,1-.5-.5V12a.5.5,0,0,1,1,0V24.5A.5.5,0,0,1,50.5,25Z" transform="translate(-31 -11.5)" fill="#e01a2b"/>
+    <path id="Path_2022" data-name="Path 2022" d="M19.5,21a.5.5,0,0,1-.5-.5V12a.5.5,0,0,1,1,0v8.5A.5.5,0,0,1,19.5,21Z" transform="translate(-15.5 -11.5)" fill="#e01a2b"/>
+    <path id="Path_2023" data-name="Path 2023" d="M27.5,21a.5.5,0,0,1-.5-.5V12a.5.5,0,0,1,1,0v8.5A.5.5,0,0,1,27.5,21Z" transform="translate(-19.5 -11.5)" fill="#e01a2b"/>
+    <path id="Path_2024" data-name="Path 2024" d="M35.5,21a.5.5,0,0,1-.5-.5V12a.5.5,0,0,1,1,0v8.5A.5.5,0,0,1,35.5,21Z" transform="translate(-23.5 -11.5)" fill="#e01a2b"/>
+    <path id="Path_2025" data-name="Path 2025" d="M43.5,20.92a.5.5,0,0,1-.5-.5V12a.5.5,0,0,1,1,0v8.42A.5.5,0,0,1,43.5,20.92Z" transform="translate(-27.5 -11.5)" fill="#e01a2b"/>
+    <path id="Path_2026" data-name="Path 2026" d="M24,17a8.123,8.123,0,1,0,8,8.122A8.123,8.123,0,0,0,24,17Zm0,13.2a5.077,5.077,0,1,1,5-5.076A5.077,5.077,0,0,1,24,30.2Z" transform="translate(-14 -14.25)" fill="#f5f7f9"/>
+    <path id="Path_2027" data-name="Path 2027" d="M33.107,35a.75.75,0,0,1-.185,0,.87.87,0,0,1-.455-.245L28.987,31.1a7,7,0,0,1-8.5-.195A6.6,6.6,0,0,1,18.9,22.348a6.9,6.9,0,0,1,8.34-2.91,6.71,6.71,0,0,1,4.35,7.59,6.5,6.5,0,0,1-1.31,2.85l3.475,3.655a.88.88,0,0,1-.045,1.235.935.935,0,0,1-.6.232Zm-8.29-15a5.84,5.84,0,0,0-5,2.845,5.6,5.6,0,0,0,1.37,7.245A5.94,5.94,0,0,0,28.712,30l.325-.275.18-.19a5.5,5.5,0,0,0,1.365-2.715,5.7,5.7,0,0,0-3.7-6.425A5.885,5.885,0,0,0,24.817,20Z" transform="translate(-14.987 -15.004)" fill="#e01a2b"/>
+  </g>
+  <rect id="Rectangle_177" data-name="Rectangle 177" width="20" height="20" fill="none"/>
+</svg>

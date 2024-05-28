@@ -1,0 +1,6 @@
+<svg id="Icon_Shop_Fill" data-name="Icon Shop Fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M12,5.563A4.858,4.858,0,0,1,7.251,2L1,3.631Q1.493,5.425,2.935,9.1q1.463.01,2.194.015c.849.005.946.1.92.954C5.934,13.713,5.7,21.663,5.7,22H18.3c0-.337-.238-8.287-.353-11.933-.026-.853.071-.949.92-.954q.73,0,2.194-.015Q22.506,5.425,23,3.631L16.749,2A4.858,4.858,0,0,1,12,5.563Z" fill-rule="evenodd"/>
+</svg>

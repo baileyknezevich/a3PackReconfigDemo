@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Group_1683" data-name="Group 1683" transform="translate(-1201 -502)">
+    <g id="open_task_ico" transform="translate(1201 502)">
+      <g id="Canvas">
+        <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="20" height="20" fill="rgba(123,7,7,0)"/>
+      </g>
+      <g id="open_task_ico-2" data-name="open_task_ico" transform="translate(3 0.5)">
+        <g id="Group_935" data-name="Group 935">
+          <g id="Group_930" data-name="Group 930" transform="translate(6.47 1.621)">
+            <g id="Group_929" data-name="Group 929">
+              <circle id="Ellipse_7" data-name="Ellipse 7" cx="0.54" cy="0.54" r="0.54" transform="translate(0 0)"/>
+            </g>
+          </g>
+          <g id="Group_931" data-name="Group 931">
+            <path id="Path_2016" data-name="Path 2016" d="M62,4.385a1.432,1.432,0,0,0-1.4-1.462H58.656a2.086,2.086,0,0,0-.975-.646.986.986,0,0,1-.663-.692,2.078,2.078,0,0,0-4.037,0,.987.987,0,0,1-.664.693,2.085,2.085,0,0,0-.974.645H49.4A1.432,1.432,0,0,0,48,4.385V17.538A1.432,1.432,0,0,0,49.4,19H60.6A1.432,1.432,0,0,0,62,17.538C62,13.388,62,9.413,62,4.385Z" transform="translate(-48)" fill="none" stroke="#000" stroke-width="1"/>
+          </g>
+        </g>
+        <g id="Group_939" data-name="Group 939" transform="translate(2.5 7.672)">
+          <g id="Group_936" data-name="Group 936">
+            <path id="Path_2018" data-name="Path 2018" d="M667.532,226.15h-4.064a.5.5,0,0,0,0,1h4.064a.5.5,0,0,0,0-1Z" transform="translate(-663 -226.15)"/>
+          </g>
+          <g id="Group_937" data-name="Group 937" transform="translate(0 3)">
+            <path id="Path_2018-2" data-name="Path 2018" d="M671.032,226.15h-7.564a.5.5,0,0,0,0,1h7.564a.5.5,0,0,0,0-1Z" transform="translate(-663 -226.15)"/>
+          </g>
+          <g id="Group_938" data-name="Group 938" transform="translate(0 6)">
+            <path id="Path_2018-3" data-name="Path 2018" d="M671.532,226.15h-8.064a.5.5,0,0,0,0,1h8.064a.5.5,0,0,0,0-1Z" transform="translate(-663 -226.15)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

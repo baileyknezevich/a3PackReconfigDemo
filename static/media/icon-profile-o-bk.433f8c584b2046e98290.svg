@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Profile" transform="translate(-558 -83)">
+    <g id="Profile-2" data-name="Profile" transform="translate(558 83)">
+      <g id="Ellipse_105" data-name="Ellipse 105" fill="none" stroke="#000" stroke-width="1">
+        <circle cx="10" cy="10" r="10" stroke="none"/>
+        <circle cx="10" cy="10" r="9.5" fill="none"/>
+      </g>
+    </g>
+    <text id="AYS_Room_Set_Up" data-name="AYS Room Set Up" transform="translate(562 97)" font-size="9" font-family="Helvetica"><tspan x="0" y="0">SS</tspan></text>
+  </g>
+</svg>

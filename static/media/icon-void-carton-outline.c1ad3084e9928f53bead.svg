@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+  <g id="Group_1714" data-name="Group 1714" transform="translate(-1416 -956)">
+    <g id="Icon_Track_Shipment_Outline" data-name="Icon Track Shipment Outline" transform="translate(1416 956)">
+      <g id="Canvas">
+        <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="23" height="23" fill="rgba(0,0,0,0)"/>
+      </g>
+    </g>
+    <g id="Group_1712" data-name="Group 1712" transform="translate(0.218 1)">
+      <g id="Group_1124" data-name="Group 1124" transform="translate(1417.783 957)">
+        <path id="Icon" d="M.95,20A.93.93,0,0,1,0,19.091V7.487a.87.87,0,0,1,.1-.406L3.538.5A.952.952,0,0,1,4.387,0H14.613a.952.952,0,0,1,.85.5L18.9,7.081a.877.877,0,0,1,.1.406v11.6a.93.93,0,0,1-.951.909Zm0-12.513v11.6h17.1V7.487l-.112-.215H1.062ZM17.462,6.363,14.612.909H9.975V6.363Zm-8.437,0V.909H4.387L1.537,6.363Z"/>
+      </g>
+      <line id="Line_119" data-name="Line 119" x2="4.456" y2="4.456" transform="translate(1424.978 968.346)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+      <line id="Line_120" data-name="Line 120" x1="4.456" y2="4.456" transform="translate(1424.978 968.346)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

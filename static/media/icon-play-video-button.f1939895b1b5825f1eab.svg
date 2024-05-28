@@ -1,0 +1,12 @@
+<svg data-name="Icon Play Video Button" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+  <defs>
+    <mask id="a">
+      <g transform="translate(1.5 1.5)">
+        <circle cx="11" cy="11" r="11" fill="#fff"/>
+        <circle data-name="Oval-3" cx="10" cy="10" r="10" transform="translate(1 1)"/>
+        <path d="m9 7 6 4-6 4z" fill="#fff"/>
+      </g>
+    </mask>
+  </defs>
+  <path mask="url(#a)" d="M0 0h24v24H0z"/>
+</svg>

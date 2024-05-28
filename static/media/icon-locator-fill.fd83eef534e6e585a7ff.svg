@@ -1,0 +1,6 @@
+<svg id="Icon_Locator_Fill" data-name="Icon Locator Fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M8,0A8,8,0,0,0,0,8,7.7,7.7,0,0,0,.18,9.67a16.64,16.64,0,0,0,2.18,5.06A47.37,47.37,0,0,0,8,22a47.37,47.37,0,0,0,5.64-7.29,16.64,16.64,0,0,0,2.18-5.06A7.7,7.7,0,0,0,16,8,8,8,0,0,0,8,0Zm2.78,13L8,10.88,5.24,13l1-3.43L3.5,7.43H7L8,4,9.07,7.43H12.5L9.72,9.55Z" transform="translate(4 1)"/>
+</svg>

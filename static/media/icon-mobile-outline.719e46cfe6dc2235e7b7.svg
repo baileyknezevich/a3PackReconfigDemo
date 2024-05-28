@@ -1,0 +1,6 @@
+<svg id="Icon_Mobile_Outline" data-name="Icon Mobile Outline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M-6028,22a2,2,0,0,1-2-2V2a2,2,0,0,1,2-2h8a2,2,0,0,1,2,2V20a2,2,0,0,1-2,2Zm-1-20V20a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1V2a1,1,0,0,0-1-1h-8A1,1,0,0,0-6029,2Zm5,10.1-2.458,1.887.937-3.052L-6028,9.051h3.063L-6024,6l.949,3.051H-6020l-2.468,1.886.937,3.063Z" transform="translate(6036 1)"/>
+</svg>

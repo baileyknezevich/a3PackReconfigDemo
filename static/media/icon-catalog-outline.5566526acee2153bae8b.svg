@@ -1,0 +1,6 @@
+<svg id="Icon_Catalog_Outline" data-name="Icon Catalog Outline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M-6020.5,18h-7.5a2,2,0,0,1-2-2V2a2,2,0,0,1,2-2h8l1,1,1-1h8a2,2,0,0,1,2,2V16a2,2,0,0,1-2,2h-7.5l-1.5,2ZM-6029,2V16a1,1,0,0,0,1,1h8l1,1.329,1-1.329h8a1,1,0,0,0,1-1V2a1,1,0,0,0-1-1h-7.589l-1.41,1.41L-6020.41,1H-6028A1,1,0,0,0-6029,2Zm9.5,12.5v-2h1v2Zm5.881-3.921-1.851,1.41.7-2.281-1.851-1.42h2.291l.71-2.29.7,2.29h2.3l-1.86,1.41.71,2.3Zm-5.881-.08v-2h1v2Zm0-4v-2h1v2Z" transform="translate(6031 2)"/>
+</svg>

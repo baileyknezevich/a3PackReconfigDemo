@@ -1,0 +1,6 @@
+<svg id="Icon_Order_History_Outline" data-name="Icon Order History Outline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M-6029,22a1,1,0,0,1-1-1V8.236a1,1,0,0,1,.106-.446l3.618-7.237a1,1,0,0,1,.893-.552h10.764a1,1,0,0,1,.9.552l3.618,7.237a1.014,1.014,0,0,1,.1.446V21a1,1,0,0,1-1,1Zm0-13.764V21h18V8.236l-.118-.236h-17.764ZM-6011.619,7l-3-6h-10.764l-1,2H-6020V4h-6.882l-1.5,3ZM-6020,16.14l-2.37,1.821.909-2.94-2.39-1.821h2.95l.9-2.93.91,2.93h2.94l-2.381,1.821.911,2.949Z" transform="translate(6032 1)"/>
+</svg>

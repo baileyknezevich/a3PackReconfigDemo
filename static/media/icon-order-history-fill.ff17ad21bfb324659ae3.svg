@@ -1,0 +1,6 @@
+<svg id="Icon_Order_History_Fill" data-name="Icon Order History Fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M15.382,0a1,1,0,0,1,.9.553l3.618,7.236a1,1,0,0,1,.1.447V21a1,1,0,0,1-1,1H1a1,1,0,0,1-1-1V8.236a.993.993,0,0,1,.106-.447L3.724.553A1,1,0,0,1,4.618,0ZM7.63,17.96,10,16.14l2.38,1.83-.91-2.95,2.38-1.82H10.91L10,10.27,9.1,13.2H6.15l2.39,1.82ZM10,4V3H3.32l-.5,1ZM1.5,7,1,8H19l-.5-1Z" transform="translate(2 1)" fill-rule="evenodd"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg id="Icon_Account_Outline" data-name="Icon Account Outline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M-6029,20a1,1,0,0,1-1-1V1a1,1,0,0,1,1-1h20a1,1,0,0,1,1,1V19a1,1,0,0,1-1,1Zm10.549-1H-6009V1h-9.451ZM-6029,19h9.449V1H-6029Zm13-8V8h1v3Zm-7,0V8h1v3Z" transform="translate(6031 2)"/>
+</svg>

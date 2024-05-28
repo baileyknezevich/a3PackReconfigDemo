@@ -1,0 +1,6 @@
+<svg id="Icon_Wallet_Fill" data-name="Icon Wallet Fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M-6028,22a2,2,0,0,1-2-2V4a2,2,0,0,1,2-2h4V0h8V2h4a2,2,0,0,1,2,2V20a2,2,0,0,1-2,2Zm10.469-4-.94-3.06,2.47-1.89h-3L-6020,10l-.94,3.049H-6024l2.48,1.951-.941,3,2.46-1.9ZM-6023,4a3,3,0,0,0,3,3,3,3,0,0,0,3-3V1h-6Zm2,0a1,1,0,0,1,1-1,1,1,0,0,1,1,1,1,1,0,0,1-1,1A1,1,0,0,1-6021,4Z" transform="translate(6032 1)"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+  <g id="Group_1713" data-name="Group 1713" transform="translate(-1450 -956)">
+    <g id="Icon_Track_Shipment_Outline" data-name="Icon Track Shipment Outline" transform="translate(1450 956)">
+      <g id="Canvas">
+        <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="23" height="23" fill="rgba(0,0,0,0)"/>
+      </g>
+    </g>
+    <g id="Group_1711" data-name="Group 1711" transform="translate(2 1)">
+      <path id="Icon" d="M-6045.951-1136h-17.1a.932.932,0,0,1-.951-.91v-11.6a.853.853,0,0,1,.1-.406l3.438-6.579a.95.95,0,0,1,.849-.5h10.226a.952.952,0,0,1,.851.5l3.436,6.579a.847.847,0,0,1,.1.406v11.6a.931.931,0,0,1-.949.91Zm-16.625-13.637h0l-.473.91h17.1l-.476-.91h-7.6v-5.454h-.95v5.454Z" transform="translate(7514 2113)"/>
+      <line id="Line_121" data-name="Line 121" x2="4.456" y2="4.456" transform="translate(1457.5 968.346)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      <line id="Line_122" data-name="Line 122" x1="4.456" y2="4.456" transform="translate(1457.5 968.346)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

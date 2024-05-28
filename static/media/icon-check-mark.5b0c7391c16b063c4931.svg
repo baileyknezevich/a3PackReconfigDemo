@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19">
+  <defs>
+    <mask id="a">
+      <g transform="translate(-1285 -165.156)">
+        <circle cx="9.5" cy="9.5" r="9.5" transform="translate(1285 165.156)" fill="#fff"/>
+        <path d="M0-5.583 1.023-6.6l2.49 2.482L9.411-10l1.023 1.019L3.481-2.05z" transform="translate(1289.874 180.527)" fill-rule="evenodd"/>
+      </g>
+    </mask>
+  </defs>
+  <path mask="url(#a)" d="M0 0h19v19H0z"/>
+</svg>

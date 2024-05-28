@@ -1,0 +1,6 @@
+<svg id="Icon_Back_Small" data-name="Icon Back Small" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Canvas">
+    <rect id="Brand_Icon_Asset_Canvas" data-name="Brand/Icon/Asset/Canvas" width="24" height="24" fill="rgba(0,0,0,0)"/>
+  </g>
+  <path id="Icon" d="M5.488,12a.488.488,0,0,1-.369-.16L.13,6.324a.523.523,0,0,1,0-.682L5.118.148a.5.5,0,0,1,.708,0,.493.493,0,0,1,0,.7L1.177,5.983l4.679,5.183a.493.493,0,0,1,0,.7A.458.458,0,0,1,5.488,12Z" transform="translate(8.997 6)"/>
+</svg>
