@@ -215,11 +215,7 @@ class ExampleGridContainer extends React.Component {
     let statusRendererDropDown =(cellData)=> {
        
         let name = cellData.rowData.STYLE_MASTER_SKU + ' ' + cellData.rowData.COLOR_NBR;
-        if(cellData.value === 'Multi-Size Packs'){
-            return(
-                <p>{cellData.value}</p>
-            )
-        }else{
+       
         return (
             <span>
 
@@ -227,7 +223,7 @@ class ExampleGridContainer extends React.Component {
                     label={'Multi'}
                     name={name}
                     checked={sortedData[cellData.rowIndex].Z_OPEN_48.includes("Multi-Of")}
-                    onChange = {()=> handlePidColor(cellData, 'Multi-Of')}
+                    onChange = {()=> handlePidColor(cellData, 'Multi-Of' || 'Multi-Size Packs')}
                 />
                 <Radio
                     label={'Eaches'}
@@ -239,7 +235,7 @@ class ExampleGridContainer extends React.Component {
             
             </span>
         );
-    }
+    
     }
 
     let handlePidColor =(cellData,value)=>{ 
@@ -338,7 +334,7 @@ class ExampleGridContainer extends React.Component {
                                 <DataTable.Column field='SIZE_NBR' header='Size' initialWidth=' 150px' sortable={boolSort} className={showCode +''}/>
                                 <DataTable.Column field='SIZE_NAME' header={'Size'+ desc} initialWidth='150px' sortable={boolSort} className={showDesc +''} />
 
-                                <DataTable.Column field='QTY_PER_PACK' header='qty_per_pack'     rowHeader={true} initialWidth=' 200px' renderer={this.statusRenderer}/>
+                                <DataTable.Column field='QTY_PER_PACK' header='New Pack'     rowHeader={true} initialWidth=' 200px' renderer={this.statusRenderer}/>
 
                                 <DataTable.Column field='Z_OPEN_48' header='Pack Type ' initialWidth=' 300px'  rowHeader={true}   renderer={statusRendererDropDown}  />
                      
