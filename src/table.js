@@ -220,13 +220,13 @@ class ExampleGridContainer extends React.Component {
             <span>
 
                   <Radio
-                    label={'Multi'}
+                    label={'Multi-Size Pack'}
                     name={name}
-                    checked={sortedData[cellData.rowIndex].Z_OPEN_48.includes("Multi-Of")}
-                    onChange = {()=> handlePidColor(cellData, 'Multi-Of' || 'Multi-Size Packs')}
+                    checked={sortedData[cellData.rowIndex].Z_OPEN_48.includes("Multi-Of")  || sortedData[cellData.rowIndex].Z_OPEN_48.includes('Multi-Size Packs')}
+                    onChange = {()=> handlePidColor(cellData, 'Multi-Of' )}
                 />
                 <Radio
-                    label={'Eaches'}
+                    label={'Single Size Multi-Of'}
                     name={name}
                     checked={sortedData[cellData.rowIndex].Z_OPEN_48.includes('Eaches')}
                     onChange = { ()=> handlePidColor(cellData, 'Eaches')}
