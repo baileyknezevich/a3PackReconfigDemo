@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/a3PackReconfigDemo/static/css/main.0a373fad.css",
-    "main.js": "/a3PackReconfigDemo/static/js/main.931c6768.js",
+    "main.js": "/a3PackReconfigDemo/static/js/main.c100cfdd.js",
     "static/js/453.cbb4c9ac.chunk.js": "/a3PackReconfigDemo/static/js/453.cbb4c9ac.chunk.js",
     "static/media/icons.svg": "/a3PackReconfigDemo/static/media/icons.c1e38fd9e0e74ba58f7a.svg",
     "static/media/icons.eot": "/a3PackReconfigDemo/static/media/icons.8b43027f47b20503057d.eot",
@@ -390,11 +390,11 @@
     "static/media/bcom-radio-check-disabled.svg": "/a3PackReconfigDemo/static/media/bcom-radio-check-disabled.b9484ebccf594816fa54.svg",
     "static/media/bcom-radio-check.svg": "/a3PackReconfigDemo/static/media/bcom-radio-check.aae7ddee016a2434b1bf.svg",
     "main.0a373fad.css.map": "/a3PackReconfigDemo/static/css/main.0a373fad.css.map",
-    "main.931c6768.js.map": "/a3PackReconfigDemo/static/js/main.931c6768.js.map",
+    "main.c100cfdd.js.map": "/a3PackReconfigDemo/static/js/main.c100cfdd.js.map",
     "453.cbb4c9ac.chunk.js.map": "/a3PackReconfigDemo/static/js/453.cbb4c9ac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a373fad.css",
-    "static/js/main.931c6768.js"
+    "static/js/main.c100cfdd.js"
   ]
 }
