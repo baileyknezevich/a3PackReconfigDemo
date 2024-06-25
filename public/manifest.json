@@ -1,6 +1,6 @@
 {
-  "short_name": "Pack Reconfig",
-  "name": "A3 Pack Reconfigeration",
+  "short_name": "a3 Pack Reconfig",
+  "name": "a3-backstage-pack-reconfiguration",
   "icons": [
     {
       "src": "macys-favicon.ico",

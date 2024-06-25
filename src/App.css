@@ -7,21 +7,48 @@
 
 
 .table_hidden{
-  display:none;
-  visibility: collapse;
+ visibility: collapse;
+ overflow:hidden;
+width: none;
 }
+
+.cell-data-wrap {
+  max-height: 10vh;
+  overflow: hidden;
+}
+
+
 .table_show{
   visibility: visible;
+  width: 170px;
+  max-width: 50vw;
+}
+.submitGroup{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:center;
+  gap:10px;
 }
 
 
-.drop_down{
-  z-index:100;
-  position:relative;
+
+
+div.p-datatable-scrollable-body{
+  max-height: 75vh !important ;
+  min-height: 11vh !important;
 }
 
+.toast-notification-wrap {
+    margin: 0 !important;
+}
 
-
-.table{
-  z-index:1;
+.toast-notification {
+    margin: 0 !important;
+}
+.Toastify__toast-body {
+  padding: 0 !important;
+}
+.Toastify__toast{
+  padding: 0 !important;
 }

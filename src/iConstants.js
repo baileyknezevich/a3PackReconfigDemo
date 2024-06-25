@@ -1,103 +1,139 @@
 
 
-const getDepartments = () =>{
-    let department = [];
+import {informationNotify} from './Notifications'
 
-    fetch('http://localhost:8080/packConfigurationApi/deptNbrs')
-    .then(response => response.json())
-    .then(json => department = json)
-    .catch(error => console.error(error));
 
-    if(department.length !== 0){
-        console.log(department)
-        return (department);
+
+const getDepartments = async () =>{
+   try{
+    const response = await fetch('/packConfigurationApi/deptNbrs');
+    if(response.ok){
+      let department = await response.json();
+    
+      return department;  
     }else{
-         department = [{dept:859},{dept:808},{dept:839},{dept:859}];
-        return (department);        
- }
+      let department =  [859,808,839,859];
+     
+      //error = "Status: "+response.status +" "+ response.statusText+". Please Contact your Admin.";
+      return department;
+    }
+   
+   }catch(e){
+
+    let department =  [859,808,839,859];
+    console.log(e)
+   
+    return department;
+   }
+   
 }
 
 
 
-const getData = (dept) =>{
+const getDeptData = async (dept) =>{
 
-    let exampleData = []
-
-    fetch('http://localhost:8080/packConfigurationApi/deptNbrs/'+dept)
-    .then(response => response.json())
-    .then(json => exampleData = json)
-    .catch(error => console.error(error));
-
-    if(exampleData.length !== 0){
-        console.log(exampleData)
-        return (exampleData);
+  if(dept === null){
+    return [];
+  }
+    try{
+    const response = await fetch('/packConfigurationApi/deptNbrs/'+dept)
+    if(response.ok){
+    let data = await response.json();
+    console.log(data)
+    return data;
     }else{
-    exampleData = [
-        { dept : 859 , Z_OPEN_70: 10 , Z_OPEN_71: 'Cold Weather',CLASS_NBR:59 , CLASS_NAME: 'PERFORMANCE PANTS', STYLE_MASTER_SKU: 'CRM7093H-44028', PRODUCT_NAME: 'CVC ENDURANCE FLEECE', COLOR_NBR:'021' , COLOR_NAME: 'DARK GRAY', ON_HAND_TOTAL :  12 , current_pack: 'Multi-Of:1', SIZE_NBR : 10965 , SIZE_NAME : 'S', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 859 , Z_OPEN_70: 10 , Z_OPEN_71: 'Cold Weather',CLASS_NBR:59 , CLASS_NAME: 'PERFORMANCE PANTS', STYLE_MASTER_SKU: 'CRM7093H-44028', PRODUCT_NAME: 'CVC ENDURANCE FLEECE', COLOR_NBR:'021' , COLOR_NAME: 'DARK GRAY', ON_HAND_TOTAL :  200 , current_pack: 'Multi-Of:1', SIZE_NBR : 10970 , SIZE_NAME : 'M', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 859 , Z_OPEN_70: 10 , Z_OPEN_71: 'Cold Weather',CLASS_NBR:59 , CLASS_NAME: 'PERFORMANCE PANTS', STYLE_MASTER_SKU: 'CRM7093H-44028', PRODUCT_NAME: 'CVC ENDURANCE FLEECE', COLOR_NBR:'021' , COLOR_NAME: 'DARK GRAY', ON_HAND_TOTAL :  400 , current_pack: 'Multi-Of:1', SIZE_NBR : 10975 , SIZE_NAME : 'L', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 859 , Z_OPEN_70: 10 , Z_OPEN_71: 'Cold Weather',CLASS_NBR:59 , CLASS_NAME: 'PERFORMANCE PANTS', STYLE_MASTER_SKU: 'CRM7093H-44028', PRODUCT_NAME: 'CVC ENDURANCE FLEECE', COLOR_NBR:'021' , COLOR_NAME: 'DARK GRAY', ON_HAND_TOTAL :  298 , current_pack: 'Multi-Of:1', SIZE_NBR : 10980 , SIZE_NAME : 'XL', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 859 , Z_OPEN_70: 10 , Z_OPEN_71: 'Cold Weather',CLASS_NBR:60 , CLASS_NAME: 'PERFORMANCE HOODIES', STYLE_MASTER_SKU: 'RMT1536-68818', PRODUCT_NAME: 'Kermit the Frog Hoodie', COLOR_NBR:'300' , COLOR_NAME: 'GREEN', ON_HAND_TOTAL :  20 , current_pack: '7PS - 1', SIZE_NBR : 10965 , SIZE_NAME : 'S', QTY_PER_PACK: 1 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 859 , Z_OPEN_70: 10 , Z_OPEN_71: 'Cold Weather',CLASS_NBR:60 , CLASS_NAME: 'PERFORMANCE HOODIES', STYLE_MASTER_SKU: 'RMT1536-68818', PRODUCT_NAME: 'Kermit the Frog Hoodie', COLOR_NBR:'300' , COLOR_NAME: 'GREEN', ON_HAND_TOTAL :  40 , current_pack: '7PS - 2', SIZE_NBR : 10970 , SIZE_NAME : 'M', QTY_PER_PACK: 2 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 859 , Z_OPEN_70: 10 , Z_OPEN_71: 'Cold Weather',CLASS_NBR:60 , CLASS_NAME: 'PERFORMANCE HOODIES', STYLE_MASTER_SKU: 'RMT1536-68818', PRODUCT_NAME: 'Kermit the Frog Hoodie', COLOR_NBR:'300' , COLOR_NAME: 'GREEN', ON_HAND_TOTAL :  40 , current_pack: '7PS - 2', SIZE_NBR : 10975 , SIZE_NAME : 'L', QTY_PER_PACK: 2 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 859 , Z_OPEN_70: 10 , Z_OPEN_71: 'Cold Weather',CLASS_NBR:60 , CLASS_NAME: 'PERFORMANCE HOODIES', STYLE_MASTER_SKU: 'RMT1536-68818', PRODUCT_NAME: 'Kermit the Frog Hoodie', COLOR_NBR:'300' , COLOR_NAME: 'GREEN', ON_HAND_TOTAL :  20 , current_pack: '7PS - 1', SIZE_NBR : 10980 , SIZE_NAME : 'XL', QTY_PER_PACK: 1 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 859 , Z_OPEN_70: 10 , Z_OPEN_71: 'Cold Weather',CLASS_NBR:60 , CLASS_NAME: 'PERFORMANCE HOODIES', STYLE_MASTER_SKU: 'RMT1536-68818', PRODUCT_NAME: 'Kermit the Frog Hoodie', COLOR_NBR:'300' , COLOR_NAME: 'GREEN', ON_HAND_TOTAL :  20 , current_pack: '7PS - 1', SIZE_NBR : 10985 , SIZE_NAME : 'XXL', QTY_PER_PACK: 1 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 808 , Z_OPEN_70: 15 , Z_OPEN_71: 'Businesswear',CLASS_NBR:41 , CLASS_NAME: 'SKIRTS', STYLE_MASTER_SKU: '31321SB-3849-13347', PRODUCT_NAME: 'WHT CROCHET 3 TIER S', COLOR_NBR:'100' , COLOR_NAME: 'WHITE', ON_HAND_TOTAL :  60 , current_pack: '6PS - 1', SIZE_NBR : 32044 , SIZE_NAME : 'SMALL', QTY_PER_PACK: 1 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 808 , Z_OPEN_70: 15 , Z_OPEN_71: 'Businesswear',CLASS_NBR:41 , CLASS_NAME: 'SKIRTS', STYLE_MASTER_SKU: '31321SB-3849-13347', PRODUCT_NAME: 'WHT CROCHET 3 TIER S', COLOR_NBR:'100' , COLOR_NAME: 'WHITE', ON_HAND_TOTAL :  119 , current_pack: '6PS - 2', SIZE_NBR : 32045 , SIZE_NAME : 'MEDIUM', QTY_PER_PACK: 2 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 808 , Z_OPEN_70: 15 , Z_OPEN_71: 'Businesswear',CLASS_NBR:41 , CLASS_NAME: 'SKIRTS', STYLE_MASTER_SKU: '31321SB-3849-13347', PRODUCT_NAME: 'WHT CROCHET 3 TIER S', COLOR_NBR:'100' , COLOR_NAME: 'WHITE', ON_HAND_TOTAL :  120 , current_pack: '6PS - 2', SIZE_NBR : 32046 , SIZE_NAME : 'LARGE', QTY_PER_PACK: 2 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 808 , Z_OPEN_70: 15 , Z_OPEN_71: 'Businesswear',CLASS_NBR:41 , CLASS_NAME: 'SKIRTS', STYLE_MASTER_SKU: '31321SB-3849-13347', PRODUCT_NAME: 'WHT CROCHET 3 TIER S', COLOR_NBR:'100' , COLOR_NAME: 'WHITE', ON_HAND_TOTAL :  60 , current_pack: '6PS - 1', SIZE_NBR : 32047 , SIZE_NAME : 'XLARGE', QTY_PER_PACK: 1 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 808 , Z_OPEN_70: 18 , Z_OPEN_71: 'Womens Pants',CLASS_NBR:42 , CLASS_NAME: 'ALTERNATIVE LENGTHS', STYLE_MASTER_SKU: 'DA1214-25563', PRODUCT_NAME: 'BLK SUZANNE DS CARGO', COLOR_NBR:'001' , COLOR_NAME: 'BLACK', ON_HAND_TOTAL :  1 , current_pack: '6PS - 1', SIZE_NBR : 32044 , SIZE_NAME : 'SMALL', QTY_PER_PACK: 1 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 808 , Z_OPEN_70: 18 , Z_OPEN_71: 'Womens Pants',CLASS_NBR:42 , CLASS_NAME: 'ALTERNATIVE LENGTHS', STYLE_MASTER_SKU: 'DA1214-25563', PRODUCT_NAME: 'BLK SUZANNE DS CARGO', COLOR_NBR:'001' , COLOR_NAME: 'BLACK', ON_HAND_TOTAL :  60 , current_pack: '6PS - 2', SIZE_NBR : 32045 , SIZE_NAME : 'MEDIUM', QTY_PER_PACK: 2 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 808 , Z_OPEN_70: 18 , Z_OPEN_71: 'Womens Pants',CLASS_NBR:42 , CLASS_NAME: 'ALTERNATIVE LENGTHS', STYLE_MASTER_SKU: 'DA1214-25563', PRODUCT_NAME: 'BLK SUZANNE DS CARGO', COLOR_NBR:'001' , COLOR_NAME: 'BLACK', ON_HAND_TOTAL :  120 , current_pack: '6PS - 2', SIZE_NBR : 32046 , SIZE_NAME : 'LARGE', QTY_PER_PACK: 2 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 808 , Z_OPEN_70: 18 , Z_OPEN_71: 'Womens Pants',CLASS_NBR:42 , CLASS_NAME: 'ALTERNATIVE LENGTHS', STYLE_MASTER_SKU: 'DA1214-25563', PRODUCT_NAME: 'BLK SUZANNE DS CARGO', COLOR_NBR:'001' , COLOR_NAME: 'BLACK', ON_HAND_TOTAL :  60 , current_pack: '6PS - 1', SIZE_NBR : 32047 , SIZE_NAME : 'XLARGE', QTY_PER_PACK: 1 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 839 , Z_OPEN_70: 20 , Z_OPEN_71: 'Womens Tops',CLASS_NBR:23 , CLASS_NAME: 'WOVEN TOPS', STYLE_MASTER_SKU: 'ETWS3025-51584', PRODUCT_NAME: 'WHT/BLK STRIPE RFFL', COLOR_NBR:'100' , COLOR_NAME: 'WHITE', ON_HAND_TOTAL :  10 , current_pack: '10PS - 1', SIZE_NBR : 33901 , SIZE_NAME : 'XS', QTY_PER_PACK: 1 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 839 , Z_OPEN_70: 20 , Z_OPEN_71: 'Womens Tops',CLASS_NBR:23 , CLASS_NAME: 'WOVEN TOPS', STYLE_MASTER_SKU: 'ETWS3025-51584', PRODUCT_NAME: 'WHT/BLK STRIPE RFFL', COLOR_NBR:'100' , COLOR_NAME: 'WHITE', ON_HAND_TOTAL :  200 , current_pack: '10PS - 2', SIZE_NBR : 33902 , SIZE_NAME : 'S', QTY_PER_PACK: 2 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 839 , Z_OPEN_70: 20 , Z_OPEN_71: 'Womens Tops',CLASS_NBR:23 , CLASS_NAME: 'WOVEN TOPS', STYLE_MASTER_SKU: 'ETWS3025-51584', PRODUCT_NAME: 'WHT/BLK STRIPE RFFL', COLOR_NBR:'100' , COLOR_NAME: 'WHITE', ON_HAND_TOTAL :  40 , current_pack: '10PS - 4', SIZE_NBR : 33903 , SIZE_NAME : 'M', QTY_PER_PACK: 4 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 839 , Z_OPEN_70: 20 , Z_OPEN_71: 'Womens Tops',CLASS_NBR:23 , CLASS_NAME: 'WOVEN TOPS', STYLE_MASTER_SKU: 'ETWS3025-51584', PRODUCT_NAME: 'WHT/BLK STRIPE RFFL', COLOR_NBR:'100' , COLOR_NAME: 'WHITE', ON_HAND_TOTAL :  20 , current_pack: '10PS - 2', SIZE_NBR : 33904 , SIZE_NAME : 'L', QTY_PER_PACK: 2 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 839 , Z_OPEN_70: 20 , Z_OPEN_71: 'Womens Tops',CLASS_NBR:23 , CLASS_NAME: 'WOVEN TOPS', STYLE_MASTER_SKU: 'ETWS3025-51584', PRODUCT_NAME: 'WHT/BLK STRIPE RFFL', COLOR_NBR:'100' , COLOR_NAME: 'WHITE', ON_HAND_TOTAL :  10 , current_pack: '10PS - 1', SIZE_NBR : 33905 , SIZE_NAME : 'XL', QTY_PER_PACK: 1 ,Z_OPEN_48:'Multi-Size Packs', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:'09' , CLASS_NAME: 'SHORT WOVEN', STYLE_MASTER_SKU: '111303-73033', PRODUCT_NAME: '2216D STRP SHRT DRES', COLOR_NBR:'660' , COLOR_NAME: 'MED PINK', ON_HAND_TOTAL :  160 , current_pack: 'Eaches:1', SIZE_NBR : 33902 , SIZE_NAME : 'S', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:'09' , CLASS_NAME: 'SHORT WOVEN', STYLE_MASTER_SKU: '111303-73033', PRODUCT_NAME: '2216D STRP SHRT DRES', COLOR_NBR:'660', COLOR_NAME: 'MED PINK', ON_HAND_TOTAL :  100 , current_pack: 'Eaches:1', SIZE_NBR : 33903 , SIZE_NAME : 'M', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:'09' , CLASS_NAME: 'SHORT WOVEN', STYLE_MASTER_SKU: '111303-73033', PRODUCT_NAME: '2216D STRP SHRT DRES', COLOR_NBR:'660' , COLOR_NAME: 'MED PINK', ON_HAND_TOTAL :  240 , current_pack: 'Eaches:1', SIZE_NBR : 33904 , SIZE_NAME : 'L', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:'09' , CLASS_NAME: 'SHORT WOVEN', STYLE_MASTER_SKU: '111303-73033', PRODUCT_NAME: '2216D STRP SHRT DRES', COLOR_NBR:'660' , COLOR_NAME: 'MED PINK', ON_HAND_TOTAL :  240 , current_pack: 'Eaches:1', SIZE_NBR : 33905 , SIZE_NAME : 'XL', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:'09' , CLASS_NAME: 'SHORT WOVEN', STYLE_MASTER_SKU: '111606-73049', PRODUCT_NAME: '2160NR SL TIEWST PKT', COLOR_NBR:'700' , COLOR_NAME: 'YELLOW', ON_HAND_TOTAL :  100 , current_pack: 'Eaches:1', SIZE_NBR : 33902 , SIZE_NAME : 'S', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:'09' , CLASS_NAME: 'SHORT WOVEN', STYLE_MASTER_SKU: '111606-73049', PRODUCT_NAME: '2160NR SL TIEWST PKT', COLOR_NBR:'700' , COLOR_NAME: 'YELLOW', ON_HAND_TOTAL :  200 , current_pack: 'Eaches:1', SIZE_NBR : 33903 , SIZE_NAME : 'M', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:'09' , CLASS_NAME: 'SHORT WOVEN', STYLE_MASTER_SKU: '111606-73049', PRODUCT_NAME: '2160NR SL TIEWST PKT', COLOR_NBR:'700' , COLOR_NAME: 'YELLOW', ON_HAND_TOTAL :  300 , current_pack: 'Eaches:1', SIZE_NBR : 33904 , SIZE_NAME : 'L', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:'09' , CLASS_NAME: 'SHORT WOVEN', STYLE_MASTER_SKU: '111606-73049', PRODUCT_NAME: '2160NR SL TIEWST PKT', COLOR_NBR:'700' , COLOR_NAME: 'YELLOW', ON_HAND_TOTAL :  400 , current_pack: 'Eaches:1', SIZE_NBR : 33905 , SIZE_NAME : 'XL', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:'09' , CLASS_NAME: 'SHORT WOVEN', STYLE_MASTER_SKU: '111187-73057', PRODUCT_NAME: 'ASST PPK TR SHKRBT P', COLOR_NBR:'960' , COLOR_NAME: 'OPEN', ON_HAND_TOTAL :  900 , current_pack: 'Eaches:1', SIZE_NBR : 33902 , SIZE_NAME : 'S', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:'09' , CLASS_NAME: 'SHORT WOVEN', STYLE_MASTER_SKU: '111187-73057', PRODUCT_NAME: 'ASST PPK TR SHKRBT P', COLOR_NBR:'960' , COLOR_NAME: 'OPEN', ON_HAND_TOTAL :  300 , current_pack: 'Eaches:1', SIZE_NBR : 33903 , SIZE_NAME : 'M', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:'09' , CLASS_NAME: 'SHORT WOVEN', STYLE_MASTER_SKU: '111187-73057', PRODUCT_NAME: 'ASST PPK TR SHKRBT P', COLOR_NBR:'960' , COLOR_NAME: 'OPEN', ON_HAND_TOTAL :  400 , current_pack: 'Eaches:1', SIZE_NBR : 33904 , SIZE_NAME : 'L', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:'09' , CLASS_NAME: 'SHORT WOVEN', STYLE_MASTER_SKU: '111187-73057', PRODUCT_NAME: 'ASST PPK TR SHKRBT P', COLOR_NBR:'960' , COLOR_NAME: 'OPEN', ON_HAND_TOTAL :  12 , current_pack: 'Eaches:1', SIZE_NBR : 33905 , SIZE_NAME : 'XL', QTY_PER_PACK: 1 ,Z_OPEN_48:'Eaches', multi:true},
-        { dept : 859 , Z_OPEN_70: 10 , Z_OPEN_71: 'Cold Weather',CLASS_NBR:59 , CLASS_NAME: 'PERFORMANCE PANTS', STYLE_MASTER_SKU: '2209-29269', PRODUCT_NAME: 'USPA TRAINER JOGGER', COLOR_NBR:'010' , COLOR_NAME: 'CHARCOAL', ON_HAND_TOTAL :  35 , current_pack: 'Multi-Of: 12', SIZE_NBR : '00000' , SIZE_NAME : 'NO SIZE', QTY_PER_PACK: 12 ,Z_OPEN_48:'Multi-Of', multi:true},
-        { dept : 859 , Z_OPEN_70: 10 , Z_OPEN_71: 'Cold Weather',CLASS_NBR:59 , CLASS_NAME: 'PERFORMANCE PANTS', STYLE_MASTER_SKU: '2207-29268', PRODUCT_NAME: 'ZIP PKT FLCE PANT LT', COLOR_NBR:'050' , COLOR_NAME: 'LIGHT/PAST', ON_HAND_TOTAL :  40 , current_pack: 'Multi-Of: 2', SIZE_NBR : '00000' , SIZE_NAME : 'NO SIZE', QTY_PER_PACK: 2 ,Z_OPEN_48:'Multi-Of', multi:true},
-        { dept : 859 , Z_OPEN_70: 10 , Z_OPEN_71: 'Cold Weather',CLASS_NBR:59 , CLASS_NAME: 'PERFORMANCE PANTS', STYLE_MASTER_SKU: '2207-29267', PRODUCT_NAME: 'ZIP PKT FLCE PANT CP', COLOR_NBR:'010', COLOR_NAME: 'CHARCOAL', ON_HAND_TOTAL :  40 , current_pack: 'Multi-Of: 4', SIZE_NBR : '00000' , SIZE_NAME : 'NO SIZE', QTY_PER_PACK: 4 ,Z_OPEN_48:'Multi-Of', multi:true},
-        { dept : 859 , Z_OPEN_70: 10 , Z_OPEN_71: 'Cold Weather',CLASS_NBR:59 , CLASS_NAME: 'PERFORMANCE PANTS', STYLE_MASTER_SKU: '2207-29266', PRODUCT_NAME: 'ZIP PKT FLCE PANT CL', COLOR_NBR:'410' , COLOR_NAME: 'NAVY', ON_HAND_TOTAL :  39 , current_pack: 'Multi-Of: 2', SIZE_NBR : '00000' , SIZE_NAME : 'NO SIZE', QTY_PER_PACK: 2 ,Z_OPEN_48:'Multi-Of', multi:true},
-        { dept : 859 , Z_OPEN_70: 10 , Z_OPEN_71: 'Cold Weather',CLASS_NBR:59 , CLASS_NAME: 'PERFORMANCE PANTS', STYLE_MASTER_SKU: '2210-29270', PRODUCT_NAME: 'EMBOSSED SIDE LEG JO', COLOR_NBR:'050' , COLOR_NAME: 'LIGHT/PAST', ON_HAND_TOTAL :  42 , current_pack: 'Multi-Of: 6', SIZE_NBR : '00000' , SIZE_NAME : 'NO SIZE', QTY_PER_PACK: 6 ,Z_OPEN_48:'Multi-Of', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:26 , CLASS_NAME: 'MAXI/MIDI WOVEN', STYLE_MASTER_SKU: '24-488-58075', PRODUCT_NAME: 'OFF WHITE 3Q CROCHET', COLOR_NBR:'110' , COLOR_NAME: 'OPEN WHITE', ON_HAND_TOTAL :  35 , current_pack: 'Multi-Of: 6', SIZE_NBR : '00000' , SIZE_NAME : 'NO SIZE', QTY_PER_PACK: 6 ,Z_OPEN_48:'Multi-Of', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:26 , CLASS_NAME: 'MAXI/MIDI WOVEN', STYLE_MASTER_SKU: '24-7004-58068', PRODUCT_NAME: 'TURQ YELLOW DIPDYE S', COLOR_NBR:'440' , COLOR_NAME: 'TURQUOISE/', ON_HAND_TOTAL :  35 , current_pack: 'Multi-Of: 6', SIZE_NBR : '00000' , SIZE_NAME : 'NO SIZE', QTY_PER_PACK: 6 ,Z_OPEN_48:'Multi-Of', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:26 , CLASS_NAME: 'MAXI/MIDI WOVEN', STYLE_MASTER_SKU: '22-011-58073', PRODUCT_NAME: 'OFF WHITE BROWN TRIM', COLOR_NBR:'110' , COLOR_NAME: 'OPEN WHITE', ON_HAND_TOTAL :  42 , current_pack: 'Multi-Of: 6', SIZE_NBR : '00000' , SIZE_NAME : 'NO SIZE', QTY_PER_PACK: 6 ,Z_OPEN_48:'Multi-Of', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:26 , CLASS_NAME: 'MAXI/MIDI WOVEN', STYLE_MASTER_SKU: '24-7003-58067', PRODUCT_NAME: 'PINK TURQ DIPDYE PAI', COLOR_NBR:'650' , COLOR_NAME: 'PINK', ON_HAND_TOTAL :  36 , current_pack: 'Multi-Of: 6', SIZE_NBR : '00000' , SIZE_NAME : 'NO SIZE', QTY_PER_PACK: 6 ,Z_OPEN_48:'Multi-Of', multi:true},
-        { dept : 803 , Z_OPEN_70: 24 , Z_OPEN_71: 'Short Sleeve Tops',CLASS_NBR:26 , CLASS_NAME: 'MAXI/MIDI WOVEN', STYLE_MASTER_SKU: '24-460-58071', PRODUCT_NAME: 'OFF WHITE SLS CRCHT', COLOR_NBR:'110' , COLOR_NAME: 'OPEN WHITE', ON_HAND_TOTAL :  37 , current_pack: 'Multi-Of: 6', SIZE_NBR : '00000' , SIZE_NAME : 'NO SIZE', QTY_PER_PACK: 6 ,Z_OPEN_48:'Multi-Of', multi:true}
-
-    ];
-
-    let data = exampleData.filter((item) => ((item.dept === dept) ));
+      let exampleData = [];
+      exampleData = [
+          { deptNbr : 859 , masterclassNbr: 10 ,masterclassDesc: 'Cold Weather',classNbr:59 , classDesc: 'PERFORMANCE PANTS', pid: 'CRM7093H-44028', pidDesc: 'CVC ENDURANCE FLEECE', colorNbr:'021' , colorDesc: 'DARK GRAY', availQty :  12 , currentPack: 'Multi-Of:1', sizeCode : 10965 , sizeDesc : 'S', qtyPerPack: null ,packType:'Eaches', wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 859 , masterclassNbr: 10 ,masterclassDesc: 'Cold Weather',classNbr:59 , classDesc: 'PERFORMANCE PANTS', pid: 'CRM7093H-44028', pidDesc: 'CVC ENDURANCE FLEECE', colorNbr:'021' , colorDesc: 'DARK GRAY', availQty :  200 , currentPack: 'Multi-Of:1', sizeCode : 10970 , sizeDesc : 'M', qtyPerPack:null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 859 , masterclassNbr: 10 ,masterclassDesc: 'Cold Weather',classNbr:59 , classDesc: 'PERFORMANCE PANTS', pid: 'CRM7093H-44028', pidDesc: 'CVC ENDURANCE FLEECE', colorNbr:'021' , colorDesc: 'DARK GRAY', availQty :  400 , currentPack: 'Multi-Of:1', sizeCode : 10975 , sizeDesc : 'L', qtyPerPack: null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 859 , masterclassNbr: 10 ,masterclassDesc: 'Cold Weather',classNbr:59 , classDesc: 'PERFORMANCE PANTS', pid: 'CRM7093H-44028', pidDesc: 'CVC ENDURANCE FLEECE', colorNbr:'021' , colorDesc: 'DARK GRAY', availQty :  298 , currentPack: 'Multi-Of:1', sizeCode : 10980 , sizeDesc : 'XL', qtyPerPack: null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 859 , masterclassNbr: 10 ,masterclassDesc: 'Cold Weather',classNbr:60 , classDesc: 'PERFORMANCE HOODIES', pid: 'RMT1536-68818', pidDesc: 'Kermit the Frog Hoodie', colorNbr:'300' , colorDesc: 'GREEN', availQty :  20 , currentPack: '7PS - 1', sizeCode : 10965 , sizeDesc : 'S', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 859 , masterclassNbr: 10 ,masterclassDesc: 'Cold Weather',classNbr:60 , classDesc: 'PERFORMANCE HOODIES', pid: 'RMT1536-68818', pidDesc: 'Kermit the Frog Hoodie', colorNbr:'300' , colorDesc: 'GREEN', availQty :  40 , currentPack: '7PS - 2', sizeCode : 10970 , sizeDesc : 'M', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 859 , masterclassNbr: 10 ,masterclassDesc: 'Cold Weather',classNbr:60 , classDesc: 'PERFORMANCE HOODIES', pid: 'RMT1536-68818', pidDesc: 'Kermit the Frog Hoodie', colorNbr:'300' , colorDesc: 'GREEN', availQty :  40 , currentPack: '7PS - 2', sizeCode : 10975 , sizeDesc : 'L', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 859 , masterclassNbr: 10 ,masterclassDesc: 'Cold Weather',classNbr:60 , classDesc: 'PERFORMANCE HOODIES', pid: 'RMT1536-68818', pidDesc: 'Kermit the Frog Hoodie', colorNbr:'300' , colorDesc: 'GREEN', availQty :  20 , currentPack: '7PS - 1', sizeCode : 10980 , sizeDesc : 'XL', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 859 , masterclassNbr: 10 ,masterclassDesc: 'Cold Weather',classNbr:60 , classDesc: 'PERFORMANCE HOODIES', pid: 'RMT1536-68818', pidDesc: 'Kermit the Frog Hoodie', colorNbr:'300' , colorDesc: 'GREEN', availQty :  20 , currentPack: '7PS - 1', sizeCode : 10985 , sizeDesc : 'XXL', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 808 , masterclassNbr: 15 ,masterclassDesc: 'Businesswear',classNbr:41 , classDesc: 'SKIRTS', pid: '31321SB-3849-13347', pidDesc: 'WHT CROCHET 3 TIER S', colorNbr:'100' , colorDesc: 'WHITE', availQty :  60 , currentPack: '6PS - 1', sizeCode : 32044 , sizeDesc : 'SMALL', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 808 , masterclassNbr: 15 ,masterclassDesc: 'Businesswear',classNbr:41 , classDesc: 'SKIRTS', pid: '31321SB-3849-13347', pidDesc: 'WHT CROCHET 3 TIER S', colorNbr:'100' , colorDesc: 'WHITE', availQty :  119 , currentPack: '6PS - 2', sizeCode : 32045 , sizeDesc : 'MEDIUM', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 808 , masterclassNbr: 15 ,masterclassDesc: 'Businesswear',classNbr:41 , classDesc: 'SKIRTS', pid: '31321SB-3849-13347', pidDesc: 'WHT CROCHET 3 TIER S', colorNbr:'100' , colorDesc: 'WHITE', availQty :  120 , currentPack: '6PS - 2', sizeCode : 32046 , sizeDesc : 'LARGE', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 808 , masterclassNbr: 15 ,masterclassDesc: 'Businesswear',classNbr:41 , classDesc: 'SKIRTS', pid: '31321SB-3849-13347', pidDesc: 'WHT CROCHET 3 TIER S', colorNbr:'100' , colorDesc: 'WHITE', availQty :  60 , currentPack: '6PS - 1', sizeCode : 32047 , sizeDesc : 'XLARGE', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 808 , masterclassNbr: 18 ,masterclassDesc: 'Womens Pants',classNbr:42 , classDesc: 'ALTERNATIVE LENGTHS', pid: 'DA1214-25563', pidDesc: 'BLK SUZANNE DS CARGO', colorNbr:'001' , colorDesc: 'BLACK', availQty :  1 , currentPack: '6PS - 1', sizeCode : 32044 , sizeDesc : 'SMALL', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 808 , masterclassNbr: 18 ,masterclassDesc: 'Womens Pants',classNbr:42 , classDesc: 'ALTERNATIVE LENGTHS', pid: 'DA1214-25563', pidDesc: 'BLK SUZANNE DS CARGO', colorNbr:'001' , colorDesc: 'BLACK', availQty :  60 , currentPack: '6PS - 2', sizeCode : 32045 , sizeDesc : 'MEDIUM', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 808 , masterclassNbr: 18 ,masterclassDesc: 'Womens Pants',classNbr:42 , classDesc: 'ALTERNATIVE LENGTHS', pid: 'DA1214-25563', pidDesc: 'BLK SUZANNE DS CARGO', colorNbr:'001' , colorDesc: 'BLACK', availQty :  120 , currentPack: '6PS - 2', sizeCode : 32046 , sizeDesc : 'LARGE', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 808 , masterclassNbr: 18 ,masterclassDesc: 'Womens Pants',classNbr:42 , classDesc: 'ALTERNATIVE LENGTHS', pid: 'DA1214-25563', pidDesc: 'BLK SUZANNE DS CARGO', colorNbr:'001' , colorDesc: 'BLACK', availQty :  60 , currentPack: '6PS - 1', sizeCode : 32047 , sizeDesc : 'XLARGE', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 839 , masterclassNbr: 20 ,masterclassDesc: 'Womens Tops',classNbr:23 , classDesc: 'WOVEN TOPS', pid: 'ETWS3025-51584', pidDesc: 'WHT/BLK STRIPE RFFL', colorNbr:'100' , colorDesc: 'WHITE', availQty :  10 , currentPack: '10PS - 1', sizeCode : 33901 , sizeDesc : 'XS', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 839 , masterclassNbr: 20 ,masterclassDesc: 'Womens Tops',classNbr:23 , classDesc: 'WOVEN TOPS', pid: 'ETWS3025-51584', pidDesc: 'WHT/BLK STRIPE RFFL', colorNbr:'100' , colorDesc: 'WHITE', availQty :  200 , currentPack: '10PS - 2', sizeCode : 33902 , sizeDesc : 'S', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 839 , masterclassNbr: 20 ,masterclassDesc: 'Womens Tops',classNbr:23 , classDesc: 'WOVEN TOPS', pid: 'ETWS3025-51584', pidDesc: 'WHT/BLK STRIPE RFFL', colorNbr:'100' , colorDesc: 'WHITE', availQty :  40 , currentPack: '10PS - 4', sizeCode : 33903 , sizeDesc : 'M', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 839 , masterclassNbr: 20 ,masterclassDesc: 'Womens Tops',classNbr:23 , classDesc: 'WOVEN TOPS', pid: 'ETWS3025-51584', pidDesc: 'WHT/BLK STRIPE RFFL', colorNbr:'100' , colorDesc: 'WHITE', availQty :  20 , currentPack: '10PS - 2', sizeCode : 33904 , sizeDesc : 'L', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 839 , masterclassNbr: 20 ,masterclassDesc: 'Womens Tops',classNbr:23 , classDesc: 'WOVEN TOPS', pid: 'ETWS3025-51584', pidDesc: 'WHT/BLK STRIPE RFFL', colorNbr:'100' , colorDesc: 'WHITE', availQty :  10 , currentPack: '10PS - 1', sizeCode : 33905 , sizeDesc : 'XL', qtyPerPack: null ,packType:'Multi-Size Packs',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:'09' , classDesc: 'SHORT WOVEN', pid: '111303-73033', pidDesc: '2216D STRP SHRT DRES', colorNbr:'660' , colorDesc: 'MED PINK', availQty :  160 , currentPack: 'Eaches:1', sizeCode : 33902 , sizeDesc : 'S', qtyPerPack: null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:'09' , classDesc: 'SHORT WOVEN', pid: '111303-73033', pidDesc: '2216D STRP SHRT DRES', colorNbr:'660', colorDesc: 'MED PINK', availQty :  100 , currentPack: 'Eaches:1', sizeCode : 33903 , sizeDesc : 'M', qtyPerPack: null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:'09' , classDesc: 'SHORT WOVEN', pid: '111303-73033', pidDesc: '2216D STRP SHRT DRES', colorNbr:'660' , colorDesc: 'MED PINK', availQty :  240 , currentPack: 'Eaches:1', sizeCode : 33904 , sizeDesc : 'L', qtyPerPack: null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:'09' , classDesc: 'SHORT WOVEN', pid: '111303-73033', pidDesc: '2216D STRP SHRT DRES', colorNbr:'660' , colorDesc: 'MED PINK', availQty :  240 , currentPack: 'Eaches:1', sizeCode : 33905 , sizeDesc : 'XL', qtyPerPack: null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:'09' , classDesc: 'SHORT WOVEN', pid: '111606-73049', pidDesc: '2160NR SL TIEWST PKT', colorNbr:'700' , colorDesc: 'YELLOW', availQty :  100 , currentPack: 'Eaches:1', sizeCode : 33902 , sizeDesc : 'S', qtyPerPack: null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:'09' , classDesc: 'SHORT WOVEN', pid: '111606-73049', pidDesc: '2160NR SL TIEWST PKT', colorNbr:'700' , colorDesc: 'YELLOW', availQty :  200 , currentPack: 'Eaches:1', sizeCode : 33903 , sizeDesc : 'M', qtyPerPack: null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:'09' , classDesc: 'SHORT WOVEN', pid: '111606-73049', pidDesc: '2160NR SL TIEWST PKT', colorNbr:'700' , colorDesc: 'YELLOW', availQty :  300 , currentPack: 'Eaches:1', sizeCode : 33904 , sizeDesc : 'L', qtyPerPack: null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:'09' , classDesc: 'SHORT WOVEN', pid: '111606-73049', pidDesc: '2160NR SL TIEWST PKT', colorNbr:'700' , colorDesc: 'YELLOW', availQty :  400 , currentPack: 'Eaches:1', sizeCode : 33905 , sizeDesc : 'XL', qtyPerPack: null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:'09' , classDesc: 'SHORT WOVEN', pid: '111187-73057', pidDesc: 'ASST PPK TR SHKRBT P', colorNbr:'960' , colorDesc: 'OPEN', availQty :  900 , currentPack: 'Eaches:1', sizeCode : 33902 , sizeDesc : 'S', qtyPerPack: null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:'09' , classDesc: 'SHORT WOVEN', pid: '111187-73057', pidDesc: 'ASST PPK TR SHKRBT P', colorNbr:'960' , colorDesc: 'OPEN', availQty :  300 , currentPack: 'Eaches:1', sizeCode : 33903 , sizeDesc : 'M', qtyPerPack: null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:'09' , classDesc: 'SHORT WOVEN', pid: '111187-73057', pidDesc: 'ASST PPK TR SHKRBT P', colorNbr:'960' , colorDesc: 'OPEN', availQty :  400 , currentPack: 'Eaches:1', sizeCode : 33904 , sizeDesc : 'L', qtyPerPack: null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:'09' , classDesc: 'SHORT WOVEN', pid: '111187-73057', pidDesc: 'ASST PPK TR SHKRBT P', colorNbr:'960' , colorDesc: 'OPEN', availQty :  12 , currentPack: 'Eaches:1', sizeCode : 33905 , sizeDesc : 'XL', qtyPerPack: null ,packType:'Eaches',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 859 , masterclassNbr: 10 ,masterclassDesc: 'Cold Weather',classNbr:59 , classDesc: 'PERFORMANCE PANTS', pid: '2209-29269', pidDesc: 'USPA TRAINER JOGGER', colorNbr:'010' , colorDesc: 'CHARCOAL', availQty :  35 , currentPack: 'Multi-Of: 12', sizeCode : '00000' , sizeDesc : 'NO SIZE', qtyPerPack: null ,packType:'Multi-Of',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 859 , masterclassNbr: 10 ,masterclassDesc: 'Cold Weather',classNbr:59 , classDesc: 'PERFORMANCE PANTS', pid: '2207-29268', pidDesc: 'ZIP PKT FLCE PANT LT', colorNbr:'050' , colorDesc: 'LIGHT/PAST', availQty :  40 , currentPack: 'Multi-Of: 2', sizeCode : '00000' , sizeDesc : 'NO SIZE', qtyPerPack: null ,packType:'Multi-Of',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 859 , masterclassNbr: 10 ,masterclassDesc: 'Cold Weather',classNbr:59 , classDesc: 'PERFORMANCE PANTS', pid: '2207-29267', pidDesc: 'ZIP PKT FLCE PANT CP', colorNbr:'010', colorDesc: 'CHARCOAL', availQty :  40 , currentPack: 'Multi-Of: 4', sizeCode : '00000' , sizeDesc : 'NO SIZE', qtyPerPack: null ,packType:'Multi-Of',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 859 , masterclassNbr: 10 ,masterclassDesc: 'Cold Weather',classNbr:59 , classDesc: 'PERFORMANCE PANTS', pid: '2207-29266', pidDesc: 'ZIP PKT FLCE PANT CL', colorNbr:'410' , colorDesc: 'NAVY', availQty :  39 , currentPack: 'Multi-Of: 2', sizeCode : '00000' , sizeDesc : 'NO SIZE', qtyPerPack: null ,packType:'Multi-Of',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 859 , masterclassNbr: 10 ,masterclassDesc: 'Cold Weather',classNbr:59 , classDesc: 'PERFORMANCE PANTS', pid: '2210-29270', pidDesc: 'EMBOSSED SIDE LEG JO', colorNbr:'050' , colorDesc: 'LIGHT/PAST', availQty :  42 , currentPack: 'Multi-Of: 6', sizeCode : '00000' , sizeDesc : 'NO SIZE', qtyPerPack: null ,packType:'Multi-Of',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:26 , classDesc: 'MAXI/MIDI WOVEN', pid: '24-488-58075', pidDesc: 'OFF WHITE 3Q CROCHET', colorNbr:'110' , colorDesc: 'OPEN WHITE', availQty :  35 , currentPack: 'Multi-Of: 6', sizeCode : '00000' , sizeDesc : 'NO SIZE', qtyPerPack: null ,packType:'Multi-Of',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:26 , classDesc: 'MAXI/MIDI WOVEN', pid: '24-7004-58068', pidDesc: 'TURQ YELLOW DIPDYE S', colorNbr:'440' , colorDesc: 'TURQUOISE/', availQty :  35 , currentPack: 'Multi-Of: 6', sizeCode : '00000' , sizeDesc : 'NO SIZE', qtyPerPack: null ,packType:'Multi-Of',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:26 , classDesc: 'MAXI/MIDI WOVEN', pid: '22-011-58073', pidDesc: 'OFF WHITE BROWN TRIM', colorNbr:'110' , colorDesc: 'OPEN WHITE', availQty :  42 , currentPack: 'Multi-Of: 6', sizeCode : '00000' , sizeDesc : 'NO SIZE', qtyPerPack: null ,packType:'Multi-Of',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:26 , classDesc: 'MAXI/MIDI WOVEN', pid: '24-7003-58067', pidDesc: 'PINK TURQ DIPDYE PAI', colorNbr:'650' , colorDesc: 'PINK', availQty :  36 , currentPack: 'Multi-Of: 6', sizeCode : '00000' , sizeDesc : 'NO SIZE', qtyPerPack: null ,packType:'Multi-Of',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' },
+          { deptNbr : 803 , masterclassNbr: 24 ,masterclassDesc: 'Short Sleeve Tops',classNbr:26 , classDesc: 'MAXI/MIDI WOVEN', pid: '24-460-58071', pidDesc: 'OFF WHITE SLS CRCHT', colorNbr:'110' , colorDesc: 'OPEN WHITE', availQty :  37 , currentPack: 'Multi-Of: 6', sizeCode : '00000' , sizeDesc : 'NO SIZE', qtyPerPack: null ,packType:'Multi-Of',  wlpsKey:'123',lineSequence:'12',onOrderBalance:'23',retailPrice:'234',poLineComments:'what',upc:'234',packId:'1234456' }
   
-    return (data);
+      ];
+      
+      let data = exampleData.filter((item) => ((item.deptNbr === dept) ));
+    
+      return (data);
+    }
+
+    }
+    catch(e){
+     console.log(e);
     }
     }
 
 
-    const submitData = (data) =>{ 
-             fetch('http://localhost:8080/packConfigurationApi/packsData', {
-              method: 'POST',
-              headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify({data})
-            })
-            .catch(error => alert(error));
+    const submitData  = async (data) =>{ 
+
+      if(data.length === 0){
+        informationNotify();
+      }else{
+        console.log(data);
+      try{
+        const response= await fetch('/packConfigurationApi/packsData', {
+          method: 'POST',
+          headers:{'Content-Type': 'application/json'},
+          body: JSON.stringify(data)
+        })
+
+       if(await response.ok){
+        return(1);
+       }else{
+        console.log(response)
+       
+        return(0);
+       }
+
+      }catch(e){
+        console.log(e);
+        return(0);
+      }
     }
 
-export {getDepartments, getData, submitData};
+    }
+
+
+  
+
+export {getDepartments, getDeptData, submitData};
 
